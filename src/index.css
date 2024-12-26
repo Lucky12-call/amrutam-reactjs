@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.hero-gradient {
+  background: linear-gradient(
+      90.17deg,
+      rgba(18, 18, 18, 0.88),
+      rgba(18, 18, 18, 0.92),
+    );
+}
+
+.hero-mobile-gradient {
+    background: linear-gradient(
+        rgba(18, 18, 18, 0.88),
+        rgba(18, 18, 18, 0.92),
+        rgba(1, 1, 1, 0)
+      );
+  }
+  
+
+  .hero-bg {
+    background-image: url('hero-img.png');
+    background-size: cover;
+    background-position: center;
+  }
+
+.bg-app-store {
+  background-image: url('mobile.png');
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.bg-app-store-sm {
+  background-image: url('mobile-sm.png');
+  background-repeat: no-repeat;
+  background-position: center;
+}
