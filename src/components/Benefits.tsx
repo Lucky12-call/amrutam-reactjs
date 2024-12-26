@@ -8,7 +8,7 @@ type BenefitData = {
   image: string
 }
 
-const dataRes = benefitData.map((item: BenefitData) => item)
+
 
 const Benefits = () => {
   return (
@@ -31,32 +31,16 @@ const Benefits = () => {
       <div className="max-md:w-full w-[85%] mx-auto flex max-md:flex-wrap gap-5 justify-between items-center ">
         {/* left section */}
         <div className="max-md:w-full flex flex-col items-center justify-center gap-5 md:gap-16 order-2 md:order-1">
-          {/* benefit cart-1  */}
-          <div className="w-full h-64 md:h-auto md:w-[350px] flex flex-col-reverse md:flex-row items-center gap-5 md:-mr-24 p-5 md:p-0">
-            <div className="">
-              <h2 className="text-lg md:text-xl font-bold text-center  md:text-end">{dataRes[0].title}</h2>
-              <p className="text-sm md:text-base text-zinc-600 text-center  md:text-end">{dataRes[0].description}</p>
-            </div>
-            <img src={dataRes[0].image} alt={`image-${dataRes[0].id}`} />
-          </div>
-
-          {/* benefit cart-2  */}
-          <div className="w-full h-64 md:h-auto md:w-[350px] flex flex-col-reverse md:flex-row items-center gap-5 p-5 md:p-0">
-            <div className="">
-              <h2 className="text-lg md:text-xl font-bold text-center  md:text-end">{dataRes[2].title}</h2>
-              <p className="text-sm md:text-base text-zinc-600 text-center  md:text-end">{dataRes[2].description}</p>
-            </div>
-            <img src={dataRes[2].image} alt={`image-${dataRes[2].id}`} />
-          </div>
-
-          {/* benefit cart-3  */}
-          <div className="w-full h-64 md:h-auto md:w-[350px] flex max-md:flex-wrap flex-col-reverse md:flex-row items-center gap-5 md:-mr-24 p-5 md:p-0">
-            <div className="">
-              <h2 className="text-lg md:text-xl font-bold text-center  md:text-end">{dataRes[4].title}</h2>
-              <p className="text-sm md:text-base text-zinc-600 text-center  md:text-end">{dataRes[4].description}</p>
-            </div>
-            <img src={dataRes[4].image} alt={`image-${dataRes[4].id}`} />
-          </div>
+          {benefitData.map((item: BenefitData) => (
+            (item.id % 2 !== 0) &&
+            (<div className={`w-full h-64 md:h-auto md:w-[350px] flex flex-col-reverse md:flex-row items-center gap-5 ${item.id === 3 ? 'mr-0' : 'md:-mr-24'} p-5 md:p-0`}>
+              <div className="">
+                <h2 className="text-lg md:text-xl font-bold text-center  md:text-end">{item.title}</h2>
+                <p className="text-sm md:text-base text-zinc-600 text-center  md:text-end">{item.description}</p>
+              </div>
+              <img src={item.image} alt={`image-${item.id}`} />
+            </div>)
+          ))}
         </div>
 
         {/* middle section */}
@@ -64,32 +48,16 @@ const Benefits = () => {
 
         {/* right section */}
         <div className="max-md:w-full flex flex-col items-center justify-center gap-5 md:gap-16 order-3">
-          {/* benefit cart-4  */}
-          <div className="w-full h-64 md:h-auto md:w-[350px] flex flex-col md:flex-row items-center gap-5 md:-ml-24 p-5 md:p-0">
-            <img src={dataRes[1].image} alt={`image-${dataRes[1].id}`} />
-            <div className="">
-              <h2 className="text-lg md:text-xl font-bold text-center md:text-start">{dataRes[1].title}</h2>
-              <p className="text-sm md:text-base text-zinc-600 text-center md:text-start">{dataRes[1].description}</p>
-            </div>
-          </div>
-
-          {/* benefit cart-5  */}
-          <div className="w-full h-64 md:h-auto md:w-[350px] flex flex-col md:flex-row items-center gap-5  p-5 md:p-0">
-            <img src={dataRes[3].image} alt={`image-${dataRes[3].id}`} />
-            <div className="">
-              <h2 className="text-lg md:text-xl font-bold text-center md:text-start">{dataRes[3].title}</h2>
-              <p className="text-sm md:text-base text-zinc-600 text-center md:text-start">{dataRes[3].description}</p>
-            </div>
-          </div>
-
-          {/* benefit cart-6  */}
-          <div className="w-full h-64 md:h-auto md:w-[350px] flex flex-col md:flex-row items-center gap-5 md:-ml-24 p-5 md:p-0">
-            <img src={dataRes[5].image} alt={`image-${dataRes[5].id}`} />
-            <div className="">
-              <h2 className="text-lg md:text-xl font-bold text-center md:text-start">{dataRes[5].title}</h2>
-              <p className="text-sm md:text-base text-zinc-600 text-center md:text-start">{dataRes[5].description}</p>
-            </div>
-          </div>
+          {benefitData.map((item: BenefitData) => (
+            (item.id % 2 === 0) &&
+            (<div className={`w-full h-64 md:h-auto md:w-[350px] flex flex-col md:flex-row items-center gap-5 ${item.id === 4 ? 'ml-0' : 'md:-ml-24'} p-5 md:p-0`}>
+              <img src={item.image} alt={`image-${item.id}`} />
+              <div className="">
+                <h2 className="text-lg md:text-xl font-bold text-center md:text-start">{item.title}</h2>
+                <p className="text-sm md:text-base text-zinc-600 text-center  md:text-start">{item.description}</p>
+              </div>
+            </div>)
+          ))}
         </div>
       </div>
     </div>

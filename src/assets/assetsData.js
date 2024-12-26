@@ -18,7 +18,7 @@ import girlImg_2 from "./girl_2.png";
 import shirafImg from "./shiraf.png";
 import girlImg_3 from "./girl_3.png";
 import appleStoreImg from "./apple-store.png";
-import googleStoreImg from "./google-store.png";;
+import googleStoreImg from "./google-store.png";
 
 export {
   msgImg,
