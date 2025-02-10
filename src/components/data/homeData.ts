@@ -1,6 +1,5 @@
 import { docImg, doctorImg, msgImg, rightImg } from "../../assets/assetsData";
 
-
 export const homeData = [
   {
     id: 1,

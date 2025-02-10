@@ -1,5 +1,5 @@
-import { benefitData } from "./data/benefitData";
 import { girlImg } from "../assets/assetsData";
+import { benefitData } from "./data/benefitData";
 
 type BenefitData = {
   id: number,
