@@ -53,8 +53,8 @@ const Contact = () => {
             <h2 className="text-lg text-[#3A643B] font-bold block md:hidden">Subscribe to our Newsletter and join Amrutam Family today!</h2>
 
             <div className="w-full flex justify-between items-center mt-5 md:hidden">
-            <input type="text" placeholder="Your Email Address" className="px-3 py-2 rounded-tl-full rounded-bl-full bg-transparent border border-black" />
-            <button className="px-3 py-2 bg-black text-white rounded-br-full rounded-tr-full border border-black">Subscribe</button>
+            <input type="text" placeholder="Your Email Address" className="w-[70%] px-3 py-2 rounded-tl-full rounded-bl-full bg-transparent border border-black" />
+            <button className="w-[30%] px-3 py-2 bg-black text-white rounded-br-full rounded-tr-full border border-black">Subscribe</button>
             </div>
         </div>
     )
