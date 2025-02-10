@@ -2,10 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaStar } from "react-icons/fa";
-import { girlImg_3 } from "../assets/assetsData";
 import { LuGraduationCap } from "react-icons/lu";
 import { IoIosLink } from "react-icons/io";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import { girlImg_3 } from "../assets/assetsData";
 
 
 const Stories = () => {
@@ -40,8 +40,8 @@ const Stories = () => {
                 </h1>
                 <Slider {...settings}>
                     {/* card-1  */}
-                    {Array(5).fill(0).map((_,) => (
-                        <div className="h-96 md:h-[450px] max-w-64 md:max-w-72 flex flex-col items-center bg-[#FFF7E2] rounded-3xl shadow-xl mx-4 py-5 md:py-10 px-5 relative">
+                    {Array(5).fill(0).map((_, i) => (
+                        <div key={i} className="h-96 md:h-[450px] max-w-64 md:max-w-72 flex flex-col items-center bg-[#FFF7E2] rounded-3xl shadow-xl mx-4 py-5 md:py-10 px-5 relative">
 
                             {/* image and name div  */}
                             <div className="w-[150px] justify-center relative mb-2 md:mb-5 ml-10 md:ml-12">

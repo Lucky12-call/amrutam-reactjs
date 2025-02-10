@@ -16,7 +16,7 @@ const Benefits = () => {
       {/* content section  */}
       <div className="">
         <h1 className="text-3xl md:text-5xl font-bold text-[#3A643B] text-center underline underline-offset-4 decoration-[#abd9ab] ">
-          Discover {"Ayurveda’s"} magic with us
+          Discover {"Ayurveda's"} magic with us
         </h1>
 
         <p className="text-lg md:text-xl text-zinc-600 text-center my-10">
@@ -33,7 +33,7 @@ const Benefits = () => {
         <div className="max-md:w-full flex flex-col items-center justify-center gap-5 md:gap-16 order-2 md:order-1">
           {benefitData.map((item: BenefitData) => (
             (item.id % 2 !== 0) &&
-            (<div className={`w-full h-64 md:h-auto md:w-[350px] flex flex-col-reverse md:flex-row items-center gap-5 ${item.id === 3 ? 'mr-0' : 'md:-mr-24'} p-5 md:p-0`}>
+            (<div key={item.id} className={`w-full h-64 md:h-auto md:w-[350px] flex flex-col-reverse md:flex-row items-center gap-5 ${item.id === 3 ? 'mr-0' : 'md:-mr-24'} p-5 md:p-0`}>
               <div className="">
                 <h2 className="text-lg md:text-xl font-bold text-center  md:text-end">{item.title}</h2>
                 <p className="text-sm md:text-base text-zinc-600 text-center  md:text-end">{item.description}</p>
@@ -50,7 +50,7 @@ const Benefits = () => {
         <div className="max-md:w-full flex flex-col items-center justify-center gap-5 md:gap-16 order-3">
           {benefitData.map((item: BenefitData) => (
             (item.id % 2 === 0) &&
-            (<div className={`w-full h-64 md:h-auto md:w-[350px] flex flex-col md:flex-row items-center gap-5 ${item.id === 4 ? 'ml-0' : 'md:-ml-24'} p-5 md:p-0`}>
+            (<div key={item.id} className={`w-full h-64 md:h-auto md:w-[350px] flex flex-col md:flex-row items-center gap-5 ${item.id === 4 ? 'ml-0' : 'md:-ml-24'} p-5 md:p-0`}>
               <img src={item.image} alt={`image-${item.id}`} />
               <div className="">
                 <h2 className="text-lg md:text-xl font-bold text-center md:text-start">{item.title}</h2>

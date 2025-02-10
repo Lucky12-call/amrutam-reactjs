@@ -35,7 +35,7 @@ const Stories = () => {
                 </h1>
                 <Slider {...settings} className="flex gap-x-8">
                     {/* card-1  */}
-                    <div className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
+                    <div key={1} className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
                         <h1 className="text-lg font-semibold bg-[#ECE7FF] rounded-tr-3xl rounded-tl-3xl px-8 py-3 ">Consulted for Skin</h1>
 
                         {/* image and name div  */}
@@ -67,7 +67,7 @@ const Stories = () => {
                     </div>
 
                     {/* card-2  */}
-                    <div className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
+                    <div key={2} className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
                         <h1 className="text-lg font-semibold bg-[#ECFEE7] rounded-tr-3xl rounded-tl-3xl px-8 py-3 ">Consulted for hair</h1>
 
                         {/* image and name div  */}
@@ -99,7 +99,7 @@ const Stories = () => {
                     </div>
 
                     {/* card-3  */}
-                    <div className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
+                    <div key={3} className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
                         <h1 className="text-lg font-semibold bg-[#ECE7FF] rounded-tr-3xl rounded-tl-3xl px-8 py-3 ">Consulted for hair</h1>
 
                         {/* image and name div  */}
@@ -131,7 +131,7 @@ const Stories = () => {
                     </div>
 
                     {/* card-4  */}
-                    <div className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
+                    <div key={4} className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
                         <h1 className="text-lg font-semibold bg-[#ECE7FF] rounded-tr-3xl rounded-tl-3xl px-8 py-3 ">Consulted for Skin</h1>
 
                         {/* image and name div  */}
@@ -163,7 +163,7 @@ const Stories = () => {
                     </div>
 
                     {/* card-5  */}
-                    <div className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
+                    <div key={5} className="h-80 md:h-96 max-w-[275px] md:max-w-[350px] bg-white rounded-3xl shadow-xl mx-4">
                         <h1 className="text-lg font-semibold bg-[#ECFEE7] rounded-tr-3xl rounded-tl-3xl px-8 py-3 ">Consulted for hair</h1>
 
                         {/* image and name div  */}
