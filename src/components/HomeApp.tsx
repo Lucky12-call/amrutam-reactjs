@@ -1,9 +1,9 @@
-import { appleStoreImg, googleStoreImg } from "../assets/assetsData"
+// import { appleStoreImg, googleStoreImg } from "../assets/assetsData"
+
+import { appleStoreImg, googleStoreImg } from "../assets/assetsData";
 
 const HomeApp = () => {
-    const Mwidth = '600';
-    const r = window.CSSSkewX
-    console.log(r)
+
     return (
         <div className={`w-full bg-transparent bg-[url('mobile-sm.png')] md:bg-[url('mobile.png')] bg-no-repeat bg-center md:bg-right pb-20`}>
             <div className="w-[80%] h-[180vh] md:h-[80%] mx-auto flex justify-between items-center">
